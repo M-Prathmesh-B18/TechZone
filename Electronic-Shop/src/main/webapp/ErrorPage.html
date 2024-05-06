@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="./AllCSS/ErrorPagecss.css">
+       <style>
+              body{
+                    background-image: url(./IMGs/loginpage-img.jpg);
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+              }
+      </style>
+</head>
+<body>
+       <div class="signinblock">
+              <div class="data2"> 
+                <form action="LoginServlet" method="post">
+                      <div class="head"><h2>Signin</h2></div>
+                     <label for="loginid">Email</label>
+                     <input type="text" id="loginid" name="loginid" placeholder="Enter Email">
+                     <label for="loginpass">Password</label>
+                     <input type="password" id="loginpass" name="loginpass" placeholder="Enter Password">
+                     <div class="btns">  
+                         <!-- <input type="button" id="btn2" name="btn2" value="Back" > -->
+                          <a href="Signup.html" id="btn2" name="btn2">Back</a>
+                         <input type="submit" id="btn3" name="btn3" value="Signin" >
+                     </div>
+                     <label ><input type="checkbox" name="remember" id="rem">Remember me</label>
+                </form>
+              </div>
+              <div class="error">
+                     <h3 class="msg">Please Enter Valid Informations</h3>
+              </div>
+       </div>
+</body>
+</html>

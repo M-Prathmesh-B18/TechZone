@@ -1,0 +1,27 @@
+ .orderdata{
+       display: flex;
+       /* justify-content: space-evenly; */
+       justify-items: center;
+       align-items: center;
+       box-shadow: 7px 7px 20px rgb(103, 96, 96);
+       margin-top:15px;
+}
+.img1{
+       margin-left: 10px;
+       margin-top: 3px;
+}
+.info{
+       margin-left: 25px;
+       /* border: solid yellow; */
+}
+.info2{
+       margin-left: 25px;
+       /* border: solid yellow; */
+}
+.purches{
+       margin-left: 25px;
+       /* border: solid green; */
+}
+.type{
+       margin-left: 25px;
+}

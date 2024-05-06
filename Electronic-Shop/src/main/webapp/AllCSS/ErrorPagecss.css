@@ -1,0 +1,92 @@
+.signinblock{
+       display: block;
+       height: 390px;
+       width: 400px;
+       border:2px solid black;
+       border-radius: 20px;
+       font-size: x-large;
+       font-weight: bold;
+       padding-left: 10px;
+       margin-top: 10%;
+       margin-left: 38%;
+       line-height: 40px;
+       /* background-color: antiquewhite; */
+       transition:background-color 0.10s ease-in-out;
+        
+       box-shadow: 10px 10px 45px rgba(72, 205, 232, 0.757);
+       transition: .3s;
+}
+.signinblock:hover{
+       box-shadow: 5px 15px 25px rgba(72, 205, 232, 0.757);
+       background-color:  rgba(72, 205, 232, 0.757);
+}
+.head{
+       padding-left: 35%;
+}
+.data2{
+       margin-top: 10px;
+        
+}
+input[type="text"],[type="password"]{
+       width: 380px;
+       height: 30px;
+       border: 2px solid rgb(58, 56, 56);
+       border-radius: 10px;
+       border-top-style: none;
+       border-left-style: none;
+       border-right-style: none;
+       box-shadow: 3px 2px 5px 2px black;
+       font-size:medium;
+       font-weight: 700;
+        
+}
+.btns{
+        display: flex;
+        margin-top: 10%;
+        justify-content:space-around;
+
+
+}
+#btn2,#btn3{
+       height: 40px;
+       width: 90px;
+       font-weight: bold;
+       font-size: medium;
+       border-radius: 10px;
+}
+#btn2{
+       background-color: rgb(235, 235, 20);
+       text-decoration: none;
+       text-align: center;
+       color: black;
+       border: 2px solid black;
+}
+#btn3{
+       background-color: rgb(22, 206, 22);
+}
+/* #btn2{
+       font-weight: bold;
+       font-size: 20px;
+       display: block;
+       height: 30px;
+       width: 90px;
+       margin-top: 5%;
+       margin-left: 35%;
+       border-radius:5px ;
+} */
+#rem{
+       /* display: block; */
+       margin-top: 20px;
+       margin-left: 100px;
+}
+.error{
+       display:inline-block;
+       height: 40px;
+       border: 2px solid black;
+       border-radius: 15px;
+       margin-top: 10px;
+       background-color: rgba(241, 29, 21, 0.873);
+}
+.msg{
+       margin-top: -5px;
+}

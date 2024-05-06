@@ -1,0 +1,24 @@
+footer{
+       background-color: rgb(46, 66, 222);
+}
+.foot{
+       display: flex;
+       border: 1px solid black;
+       height: 200px;
+       justify-content: center;
+}
+input[type="text"]{
+       width: 240px;
+}
+.btns{
+       margin-left: 440px;
+}
+textarea{
+       margin-top: 10px;
+       width: 490px;
+       height: 100px;
+}
+.right-side{
+       margin-top: 22px;
+       margin-left: 20px;
+}
