@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ page import="java.sql.*,com.javaBeans.*" %>
+ <%
+if(session.getAttribute("flag")!=null){  %>
+<%@include file="header.html" %>
+<%} %><%else{ %>
+ <%@include file="loginheader.html" %>
+<%} %>
     
 <!DOCTYPE html>
 <html lang="en">

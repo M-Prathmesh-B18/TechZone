@@ -16,14 +16,22 @@ if(session.getAttribute("flag")!=null){  %>
 <link rel="stylesheet" href="./AllCSS/productcss.css">
        <link rel="stylesheet" href="./AllCSS/laptopcss.css">
        <link rel="stylesheet" href="./AllCSS/ordercss.css">
+<style>
+      .btns{
+       position: absolute;
+       right: 0;
+       margin-right: 20px;
+       }
+</style>
 </head>
 <body>
 
             <% 
+              String pro=request.getParameter("data");
               Class.forName("com.mysql.jdbc.Driver");
               Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/Electronicshop","root","mprathamsql1810");
               PreparedStatement ps=conn.prepareStatement("select*from product where id = ? ");
-              ps.setString(1,request.getParameter("data"));
+              ps.setString(1,pro);
               ResultSet rs=ps.executeQuery();
               ArrayList<AllProducts> arr=new ArrayList<>();
               while(rs.next()){
@@ -45,9 +53,13 @@ if(session.getAttribute("flag")!=null){  %>
               <div class="info2"><span><%=p1.getModel() %></span></div>
               <div class="purches"> Rs<%=p1.getPrice() %> </div>
               <div class="type">Cash on delivery</div>
+              <div class="btns" style="margin-left:40px">
+                             <a href="productservlet.java?data=id"><input type="button" value="Cancel order" class="btn1"></a>
+                             <a href="productservlet.java?data=id"><input type="button" value="Remove item" class="btn2"></a>
+              </div>
 
        </div>
       <%} %>
-<%@include file="footer.html" %>
+ 
 </body>
 </html>

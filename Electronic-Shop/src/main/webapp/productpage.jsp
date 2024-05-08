@@ -70,12 +70,10 @@ if(session.getAttribute("flag")!=null){  %>
                        <label for="cart" class="label">Add to Cart</label>
                        <input type="checkbox" id="cart" class="ch" name="carts" >
                        
-                       <form action="ProductServelet" method="get">
-                                <input type="submit" value="Buy" name="check" class="btn">
-                       </form>
+                        
                        
                         
-                        <%--   <a href="orderpage.jsp?data=<%=p1.getId() %>"> <input type="button" value="Bay" name="check" class="btn"> </a>   --%> 
+                          <a href="orderpage.jsp?data=<%=p1.getId() %>"> <input type="button" value="Bay" name="check" class="btn"> </a>  
                    
                      </div>
                     </div>

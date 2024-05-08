@@ -15,7 +15,7 @@
        /* border: solid yellow; */
 }
 .info2{
-       margin-left: 25px;
+       margin-left: 30px;
        /* border: solid yellow; */
 }
 .purches{
@@ -24,4 +24,10 @@
 }
 .type{
        margin-left: 25px;
+}
+.btns{
+	margin-left:30px;
+       position: absolute;
+       right: 0;
+       margin-right: 20px;
 }
