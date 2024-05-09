@@ -104,7 +104,7 @@ public class LoginServlet extends HttpServlet {
 				s1.setAttribute("uname", e);
 				s1.setAttribute("upass",p);
 				s1.setAttribute("flag",1);
-				s1.setAttribute("id", id);
+				s1.setAttribute("usid", id);
 			    RequestDispatcher rd=request.getRequestDispatcher("mainHome.jsp");
 			    rd.forward(request, response);
 			}

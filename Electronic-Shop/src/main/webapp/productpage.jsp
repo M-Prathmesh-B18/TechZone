@@ -68,12 +68,9 @@ if(session.getAttribute("flag")!=null){  %>
                      <h4><%=p1.getDiscription() %></h4>
                       <div class="b1"> 
                        <label for="cart" class="label">Add to Cart</label>
-                       <input type="checkbox" id="cart" class="ch" name="carts" >
-                       
+                       <input type="checkbox" id="cart" class="ch" name="carts" value="iteamcart">
                         
-                       
-                        
-                          <a href="orderpage.jsp?data=<%=p1.getId() %>"> <input type="button" value="Bay" name="check" class="btn"> </a>  
+                          <a href="ProductServelet?data=<%=p1.getId()%>"> <input type="button" value="Bay" name="check" class="btn"> </a>  
                    
                      </div>
                     </div>
