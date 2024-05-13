@@ -27,10 +27,11 @@ if(session.getAttribute("flag")!=null){  %>
 <body>
 
             <% 
+              String uid=(String)session.getAttribute("usid");
               String pro=request.getParameter("data");
               Class.forName("com.mysql.jdbc.Driver");
               Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/Electronicshop","root","mprathamsql1810");
-              PreparedStatement ps=conn.prepareStatement("select*from product where id = ? ");
+              PreparedStatement ps=conn.prepareStatement("select*from buy where id = ? ");
               ps.setString(1,pro);
               ResultSet rs=ps.executeQuery();
               ArrayList<AllProducts> arr=new ArrayList<>();
