@@ -44,15 +44,17 @@ public class ProductServelet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	  if(flags==1)
 	  {	  
-		pw=response.getWriter();
+		 pw=response.getWriter();
 		 session=request.getSession();
 		
 		String pids=request.getParameter("data");
 		String uids=(String)session.getAttribute("usid");
-		pw.println(uids+" "+pids);
 		try {
 			ps.setString(1, uids);
 			ps.setString(2,pids);
+			ps.executeQuery();
+			RequestDispatcher rd=request.getRequestDispatcher("orderpage.jsp");
+			rd.forward(request, response);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
