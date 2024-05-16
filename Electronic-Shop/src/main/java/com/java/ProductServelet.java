@@ -52,7 +52,7 @@ public class ProductServelet extends HttpServlet {
 		try {
 			ps.setString(1, uids);
 			ps.setString(2,pids);
-			ps.executeQuery();
+			ps.execute();
 			RequestDispatcher rd=request.getRequestDispatcher("orderpage.jsp");
 			rd.forward(request, response);
 		} catch (SQLException e) {
