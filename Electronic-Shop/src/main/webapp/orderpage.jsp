@@ -28,14 +28,16 @@ if(session.getAttribute("flag")!=null){  %>
 
             <% 
               String uid=(String)session.getAttribute("usid");
-              String pro=request.getParameter("data");
+              
+              
               Class.forName("com.mysql.jdbc.Driver");
               Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/Electronicshop","root","mprathamsql1810");
-              PreparedStatement ps=conn.prepareStatement("select*from buy where id = ? ");
-              ps.setString(1,pro);
+              PreparedStatement ps=conn.prepareStatement("select img,model,price from product join buy on product.id=buy.pids  where  buy.uids= ? ");
+              ps.setString(1,uid);
               ResultSet rs=ps.executeQuery();
+    
               ArrayList<AllProducts> arr=new ArrayList<>();
-              while(rs.next()){
+              while(rs.next()){            	            	  
             	  AllProducts p=new AllProducts();
             	  p.setImg(rs.getString("img"));
             	  p.setModel(rs.getString("model"));

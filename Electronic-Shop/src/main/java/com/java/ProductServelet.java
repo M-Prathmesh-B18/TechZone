@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
 
- 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
  
 import javax.servlet.annotation.WebServlet;
@@ -60,9 +60,11 @@ public class ProductServelet extends HttpServlet {
 			int x=ps.executeUpdate();
 			    if(x>0)
 			    {
-			    	pw.println(pids+""+uids);
+			    	RequestDispatcher rd=request.getRequestDispatcher("orderpage.jsp");
+					rd.forward(request, response);
 			    }else {
-			    	pw.println("connection is not established");
+			    	RequestDispatcher rd=request.getRequestDispatcher("loginmsg.jsp");
+					rd.forward(request, response);
 			    }
 			 
 		   } catch (SQLException e) {
