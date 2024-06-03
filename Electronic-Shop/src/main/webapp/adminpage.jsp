@@ -158,14 +158,14 @@ ul li:hover ul.dropdown{
                             <li >
                                    <a href="#">Products</a>
                                    <ul class="dropdown">
-                                          <li><a href="#">Laptop</a></li>
-                                          <li><a href="#">TV</a></li>
-                                          <li><a href="#">Camera</a></li>
-                                          <li><a href="#">Phone</a></li>
+                                          <li><a href="laptoppage.jsp">Laptop</a></li>
+                                          <li><a href="tvpage.jsp">TV</a></li>
+                                          <li><a href="camerapage.jsp">Camera</a></li>
+                                          <li><a href="phonepage.jsp">Phone</a></li>
                                    </ul>
                             </li>
                            <div class="options"> 
-                            <li><a href="#">Orders</a></li>
+                            <li><a href="adminorderpage.jsp">Orders</a></li>
                             <li><a href="#">Profile</a></li>
                             <li><a href="#">LogIn</a></li>
                             <li> <a href="#">About</a></li>   
